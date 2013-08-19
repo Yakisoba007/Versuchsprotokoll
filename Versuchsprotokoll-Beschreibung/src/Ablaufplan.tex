@@ -1,0 +1,142 @@
+%%This is a very basic article template.
+%%There is just one section and two subsections.
+\documentclass{article}
+%\usepackage[ansinew]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage{german}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+ \geometry{a4paper,left=40mm,right=30mm, top=2cm, bottom=2cm}
+ \setlength\parindent{0pt}
+\newcommand{\incRun}{ \addtocounter{run}{1} } 
+\newcommand{\nRun}{\incRun \arabic{run}} 
+
+\usepackage{array} 
+\begin{document}
+\newcounter{run}
+\setcounter{run}{-1}
+
+\section*{EMG Messungen}
+\vspace{1cm}
+\section*{Ablaufplan}
+
+\section*{Abk\"urzungen}
+\begin{center}
+  \begin{tabular}{ p{0.1\textwidth}  p{0.4\textwidth} p{0.1\textwidth}  p{0.4\textwidth}}
+    %\hline
+    l & leicht/schwach/wenig & Eb & Ellenbogen beugen\\
+	m & mittel & Oh & Oberarm heben\\
+	s & stark/kr\"aftig/sehr & Ud & Unterarm drehen\\
+	*W & mit Gewicht & Ha & Hand anziehen\\
+	HiK & Handinnenfl\"ache zum K\"orper & Fb & Faust ballen\\
+	HiV & Handinnenfl\"ache nach Vorne & Aa & Arm abst\"utzen \\
+	HiH & Handinnenfl\"ache nach Hinten & Pv & Papier verschieben \\
+	HiU & Handinnenfl\"ache nach Unten & Kh & Kiste heben\\
+	Dv & Drehung vorw\"arts& Ia & Handinnenfl\"ache anziehen\\
+	Ds & Drehung seitlich & Ra & Handr\"uckseite anziehen
+	\end{tabular}
+\end{center}
+	
+	    
+    
+\section{Ohne Unterst\"utzung}
+\begin{center}
+  \begin{tabular}{ >{\raggedleft} p{0.05\textwidth} | p{0.2\textwidth} |p{0.02\textwidth} |p{0.73\textwidth}}
+    %\hline
+    \textbf{Nr.}  & \textbf{Beschreibung} & $\checkmark$ & \textbf{Kommentare}\\ \hline
+\nRun & Ruhe & &\\ \hline
+\nRun & Eb l HiK & &\\  \hline
+\nRun & Eb m HiK & &\\  \hline
+\nRun & Eb s HiK & &\\  \hline
+\nRun & Eb l HiV & &\\  \hline
+\nRun & Eb m HiV & &\\  \hline
+\nRun & Eb s HiV & &\\  \hline
+\nRun & Eb lW HiK & &\\  \hline
+\nRun & Eb mW HiK & &\\  \hline
+\nRun & Eb sW HiK & &\\  \hline
+\nRun & Oh lW Dv & &\\  \hline
+\nRun & Oh sW Dv & &\\  \hline
+\nRun & Oh l Ds & &\\  \hline
+\nRun & Oh s Ds & &\\  \hline
+\nRun & Oh l Dv & &\\  \hline
+\nRun & Oh s Dv & &\\  \hline
+\nRun & Ud & &\\  \hline
+\nRun & Fb l & &\\  \hline
+\nRun & Fb s & &\\  \hline
+\nRun & Aa HiK & &\\  \hline
+\nRun & Aa HiU & &\\  \hline
+\nRun & Pv  & &\\ 
+  \end{tabular}
+\end{center}
+\newpage
+\section{Mit Unterst\"utzung}
+\begin{center}
+  \begin{tabular}{ >{\raggedleft} p{0.05\textwidth} | p{0.2\textwidth} |p{0.02\textwidth} |p{0.73\textwidth}}
+    %\hline
+    \textbf{Nr.}  & \textbf{Beschreibung} & $\checkmark$ & \textbf{Kommentare}\\ \hline
+\nRun & Eb l HiK & &\\  \hline
+\nRun & Eb m HiK & &\\  \hline
+\nRun & Eb s HiK & &\\  \hline
+\nRun & Eb l HiV & &\\  \hline
+\nRun & Eb m HiV & &\\  \hline
+\nRun & Eb s HiV & &\\  \hline
+\nRun & Eb l HiK & &\\  \hline
+\nRun & Eb m HiK & &\\  \hline
+\nRun & Eb s HiK & &\\  \hline
+\nRun & Oh l Dv & &\\  \hline
+\nRun & Oh s Dv & &\\  \hline
+\nRun & Oh l Ds & &\\  \hline
+\nRun & Oh s Ds & &\\  \hline
+\nRun & Oh l Dv & &\\  \hline
+\nRun & Oh s Dv & &\\  \hline
+\nRun & Ud & &\\  \hline
+\nRun & Fb l & &\\  \hline
+\nRun & Fb s & &\\  \hline
+\nRun & Aa HiK & &\\  \hline
+\nRun & Aa HiU & &\\  \hline
+\nRun & Pv   & &\\  
+  \end{tabular}
+\end{center}
+
+\section{Kontrolle ohne Unterst\"utzung}
+\begin{center}
+  \begin{tabular}{ >{\raggedleft} p{0.05\textwidth} | p{0.2\textwidth} |p{0.02\textwidth} |p{0.73\textwidth}}
+    %\hline
+    \textbf{Nr.}  & \textbf{Beschreibung} & $\checkmark$ & \textbf{Kommentare}\\ \hline
+\nRun & Eb l HiK & &\\  \hline
+\nRun & Eb m HiK & &\\  \hline
+\nRun & Eb s HiK & &\\  \hline
+\nRun & Eb l HiV & &\\  \hline
+\nRun & Eb m HiV & &\\  \hline
+\nRun & Eb s HiV & &\\  \hline
+\nRun & Eb lW HiK & &\\  \hline
+\nRun & Eb mW HiK & &\\  \hline
+\nRun & Eb sW HiK & &\\  \hline
+\nRun & Oh lW Dv & &\\  \hline
+\nRun & Oh sW Dv & &\\  \hline
+\nRun & Oh l Ds & &\\  \hline
+\nRun & Oh s Ds & &\\  \hline
+\nRun & Oh l Dv & &\\  \hline
+\nRun & Oh s Dv & &\\  \hline
+\nRun & Ud & &\\  \hline
+\nRun & Fb l & &\\  \hline
+\nRun & Fb s & &\\  \hline
+\nRun & Aa HiK & &\\  \hline
+\nRun & Aa HiU & &\\  \hline
+\nRun & Pv & &\\  \hline
+\nRun & Ruhe & & \\
+  \end{tabular}
+\end{center}
+
+\section{Zusatz}
+\begin{center}
+  \begin{tabular}{ >{\raggedleft} p{0.05\textwidth} | p{0.2\textwidth} |p{0.02\textwidth} |p{0.73\textwidth}}
+    %\hline
+    \textbf{Nr.}  & \textbf{Beschreibung} & $\checkmark$ & \textbf{Kommentare}\\ \hline
+\nRun & Kh ohne & &\\  \hline
+\nRun & Kh mit & &\\  \hline
+\nRun & Kh ohne & &\\ 
+  \end{tabular}
+\end{center}
+\end{document}
